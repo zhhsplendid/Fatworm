@@ -1,0 +1,7 @@
+
+use ATIS
+;
+
+
+select distinct flightcode from flightfare order by flightcode ASC
+;

@@ -1,0 +1,108 @@
+@NEW_THREAD
+use bank
+;
+@UN_ORDERED_SELECT
+select distinct customer_name
+from borrower
+where customer_name in (select customer_name
+                        from depositor)
+;
+
+@UN_ORDERED_SELECT
+select distinct customer_name
+from borrower,loan
+where borrower.loan_number = loan.loan_number and
+      branch_name = 'Perryridge' and 
+      customer_name in
+            (select customer_name
+             from depositor, account
+             where depositor.account_number = account.account_number) and
+	  branch_name in
+            (select branch_name
+             from depositor, account
+             where depositor.account_number = account.account_number)
+;
+
+@UN_ORDERED_SELECT
+select distinct customer_name
+from borrower
+where customer_name in (select customer_name
+                            from depositor)
+;
+
+@UN_ORDERED_SELECT
+select branch_name
+from branch
+where assets > any (select assets
+                    from branch
+                    where branch_city = 'Brooklyn')
+;
+
+@UN_ORDERED_SELECT
+select branch_name
+from branch
+where assets > all (select assets
+                    from branch
+                    where branch_city = 'Brooklyn')
+;
+
+@UN_ORDERED_SELECT
+select branch_name
+from account
+group by branch_name
+having avg(balance) >= all(select avg(balance)
+                           from account
+                           group by branch_name)
+;
+
+@UN_ORDERED_SELECT
+select customer_name
+from borrower
+where exists (select * 
+              from depositor
+              where depositor.customer_name = borrower.customer_name)
+;
+
+@UN_ORDERED_SELECT
+select distinct S.customer_name
+from depositor as S
+where not exists (select R.branch_name
+                    from depositor as T, account as R
+                    where T.account_number = R.account_number and S.customer_name = T.customer_name)
+;
+
+@UN_ORDERED_SELECT
+select branch_name, avg_balance
+from (select branch_name, avg(balance) as avg_balance
+      from account
+      group by branch_name)
+      as branch_avg
+where avg_balance > 1200
+;
+
+@UN_ORDERED_SELECT
+select max(tot_balance)
+from (select branch_name, sum(balance) as tot_balance
+      from account
+      group by branch_name) 
+      as branch_total
+;
+
+@UN_ORDERED_SELECT
+insert into account 
+       (select loan_number, branch_name, 200
+       from loan
+       where branch_name = 'Perryridge')
+;
+
+@UN_ORDERED_SELECT
+update account 
+set balance = (select amount 
+               from loan
+               where branch_name = 'Mianus')
+where balance >= 900
+;
+
+@UN_ORDERED_SELECT
+select * from account
+;

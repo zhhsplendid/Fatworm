@@ -1,0 +1,10 @@
+
+use opt
+;
+
+
+select TTA.id, TTA.val, TTB.val 
+from TTA, TTB
+where TTA.id = TTB.id
+;
+

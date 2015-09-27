@@ -1,0 +1,16 @@
+
+use opt
+;
+
+
+select TTAA.id, TTAA.val
+from TTAA, TTBB, TTA
+where TTA.id = TTBB.id and TTA.id = TTAA.id
+;
+
+
+select TTAA.id, TTAA.val
+from TTAA, TTBB, TTA, TTB
+where TTA.id = TTBB.id and TTA.id = TTAA.id and TTA.id = TTB.id
+;
+ 

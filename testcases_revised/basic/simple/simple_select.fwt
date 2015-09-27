@@ -1,0 +1,45 @@
+use db
+;
+@UN_ORDERED_SELECT
+select * from a
+;
+@UN_ORDERED_SELECT
+select * from b
+;
+@UN_ORDERED_SELECT
+select * from a, b
+;
+@UN_ORDERED_SELECT
+select a from a, b
+;
+@UN_ORDERED_SELECT
+select b from a, b
+;
+@UN_ORDERED_SELECT
+select a.a from a, b
+;
+@UN_ORDERED_SELECT
+select b.b from a, b
+;
+@UN_ORDERED_SELECT
+select a, b from a,b
+;
+@UN_ORDERED_SELECT
+select a, b from a as c, b
+;
+@UN_ORDERED_SELECT
+select c.a, b from a as c, b
+;
+@UN_ORDERED_SELECT
+select a.a, c.a, c.b from a, c where a.a = c.a and a.a = 1
+;
+@UN_ORDERED_SELECT
+select a.a as a, a.a as b from a
+;
+@UN_ORDERED_SELECT
+select distinct a from a
+;
+@UN_ORDERED_SELECT
+select 1-(-2*10)
+;
+

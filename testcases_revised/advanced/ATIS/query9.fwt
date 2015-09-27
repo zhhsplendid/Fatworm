@@ -1,0 +1,7 @@
+
+use ATIS
+;
+
+
+select distinct fromairport from flight order by fromairport ASC
+;

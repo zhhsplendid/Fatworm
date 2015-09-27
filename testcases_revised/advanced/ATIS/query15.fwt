@@ -1,0 +1,7 @@
+
+use ATIS
+;
+
+
+select sum(engines) from aircraft
+;

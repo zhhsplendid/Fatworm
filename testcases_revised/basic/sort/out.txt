@@ -1,0 +1,545 @@
+mysql> \. D:\fatjudger\basic\sort\insert.fwt
+Query OK, 1 row affected (0.09 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Database changed
+ERROR: 
+No query specified
+
+Query OK, 0 rows affected (0.15 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+mysql> \. D:\fatjudger\basic\sort\insert.fwt > a.out
+ERROR: 
+Failed to open file 'D:\fatjudger\basic\sort\insert.fwt > a.out', error: 22
+mysql> ls
+    -> 
+    -> 
+    -> 
+    -> dir
+    -> exit
+    -> mysql> \. D:\fatjudger\basic\sort\insert.fwt
+Query OK, 1 row affected (0.20 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Database changed
+ERROR: 
+No query specified
+
+Query OK, 0 rows affected (0.13 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.03 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+Query OK, 1 row affected (0.03 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+mysql> \. D:\fatjudger\basic\sort\sort.fwt
+Database changed
+ERROR: 
+No query specified
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@ORDERED_SELECT
+select * from
+(select a.ch*10000000+b.ch*1000000+c.ch*100000+d.c' at line 1
+mysql> \. D:\fatjudger\basic\sort\sort.fwt
+Database changed
+ERROR: 
+No query specified
+
++----------+
+| ans      |
++----------+
+|        0 |
+|        1 |
+|        2 |
+|        3 |
+|        4 |
+|        7 |
+|        8 |
+|        9 |
+|       10 |
+|       11 |
+|       12 |
+|       13 |
+|       14 |
+|       17 |
+|       18 |
+|       19 |
+|       20 |
+| 99999979 |
+| 99999980 |
+| 99999981 |
+| 99999982 |
+| 99999983 |
+| 99999984 |
+| 99999987 |
+| 99999988 |
+| 99999989 |
+| 99999990 |
+| 99999991 |
+| 99999992 |
+| 99999993 |
+| 99999994 |
+| 99999997 |
+| 99999998 |
+| 99999999 |
++----------+
+34 rows in set (19.04 sec)
+
+mysql> \. D:\fatjudger\basic\sort\sort.fwt
+Database changed
+ERROR: 
+No query specified
+
++----------+
+| ans      |
++----------+
+|        0 |
+|        1 |
+|        2 |
+|        3 |
+|        4 |
+|        7 |
+|        8 |
+|        9 |
+|       10 |
+|       11 |
+|       12 |
+|       13 |
+|       14 |
+|       17 |
+|       18 |
+|       19 |
+|       20 |
+| 99999979 |
+| 99999980 |
+| 99999981 |
+| 99999982 |
+| 99999983 |
+| 99999984 |
+| 99999987 |
+| 99999988 |
+| 99999989 |
+| 99999990 |
+| 99999991 |
+| 99999992 |
+| 99999993 |
+| 99999994 |
+| 99999997 |
+| 99999998 |
+| 99999999 |
++----------+
+34 rows in set (18.58 sec)
+
+mysql> \h
+
+For information about MySQL products and services, visit:
+   http://www.mysql.com/
+For developer information, including the MySQL Reference Manual, visit:
+   http://dev.mysql.com/
+To buy MySQL Enterprise support, training, or other products, visit:
+   https://shop.mysql.com/
+
+List of all MySQL commands:
+Note that all text commands must be first on line and end with ';'
+?         (\?) Synonym for `help'.
+clear     (\c) Clear the current input statement.
+connect   (\r) Reconnect to the server. Optional arguments are db and host.
+delimiter (\d) Set statement delimiter.
+ego       (\G) Send command to mysql server, display result vertically.
+exit      (\q) Exit mysql. Same as quit.
+go        (\g) Send command to mysql server.
+help      (\h) Display this help.
+notee     (\t) Don't write into outfile.
+print     (\p) Print current command.
+prompt    (\R) Change your mysql prompt.
+quit      (\q) Quit mysql.
+rehash    (\#) Rebuild completion hash.
+source    (\.) Execute an SQL script file. Takes a file name as an argument.
+status    (\s) Get status information from the server.
+tee       (\T) Set outfile [to_outfile]. Append everything into given outfile.
+use       (\u) Use another database. Takes database name as argument.
+charset   (\C) Switch to another charset. Might be needed for processing binlog with multi-byte charsets.
+warnings  (\W) Show warnings after every statement.
+nowarning (\w) Don't show warnings after every statement.
+
+For server side help, type 'help contents'
+
+mysql> \w
+Show warnings disabled.
+mysql> \. D:\fatjudger\basic\sort\sort.fwt
+Database changed
+ERROR: 
+No query specified
+
++----------+
+| ans      |
++----------+
+|        0 |
+|        1 |
+|        2 |
+|        3 |
+|        4 |
+|        7 |
+|        8 |
+|        9 |
+|       10 |
+|       11 |
+|       12 |
+|       13 |
+|       14 |
+|       17 |
+|       18 |
+|       19 |
+|       20 |
+| 99999979 |
+| 99999980 |
+| 99999981 |
+| 99999982 |
+| 99999983 |
+| 99999984 |
+| 99999987 |
+| 99999988 |
+| 99999989 |
+| 99999990 |
+| 99999991 |
+| 99999992 |
+| 99999993 |
+| 99999994 |
+| 99999997 |
+| 99999998 |
+| 99999999 |
++----------+
+34 rows in set (17.63 sec)
+
+mysql> \. D:\fatjudger\basic\sort\sort2.fwt
+Database changed
+ERROR: 
+No query specified
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@ORDERED_SELECT
+select * from
+(select a.ch*10000000+b.ch*1000000+c.ch*100000+d.c' at line 1
+mysql> 
+mysql> 
+mysql> \. D:\fatjudger\basic\sort\sort2.fwt
+Database changed
+ERROR: 
+No query specified
+
++----------+
+| ans      |
++----------+
+| 99999999 |
+| 99999998 |
+| 99999997 |
+| 99999994 |
+| 99999993 |
+| 99999992 |
+| 99999991 |
+| 99999990 |
+| 99999989 |
+| 99999988 |
+| 99999987 |
+| 99999984 |
+| 99999983 |
+| 99999982 |
+| 99999981 |
+| 99999980 |
+| 99999979 |
+|       20 |
+|       19 |
+|       18 |
+|       17 |
+|       14 |
+|       13 |
+|       12 |
+|       11 |
+|       10 |
+|        9 |
+|        8 |
+|        7 |
+|        4 |
+|        3 |
+|        2 |
+|        1 |
+|        0 |
++----------+
+34 rows in set (18.54 sec)
+
+mysql> \. D:\fatjudger\basic\types\float.fwt
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@NEW_THREAD
+drop database fatwormTypes' at line 1
+ERROR 1007 (HY000): Can't create database 'fatwormtypes'; database exists
+Database changed
+ERROR: 
+No query specified
+
+ERROR 1050 (42S01): Table 'test1' already exists
+Query OK, 1 row affected, 1 warning (0.08 sec)
+
+Query OK, 1 row affected, 1 warning (0.06 sec)
+
+Query OK, 1 row affected, 1 warning (0.04 sec)
+
+Query OK, 1 row affected, 1 warning (0.04 sec)
+
+Query OK, 1 row affected, 1 warning (0.06 sec)
+
+Query OK, 1 row affected, 1 warning (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.04 sec)
+
+Query OK, 1 row affected, 1 warning (0.06 sec)
+
+Query OK, 1 row affected, 1 warning (0.05 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@UN_ORDERED_SELECT
+select sum(b),avg(b) from test1' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@ORDERED_SELECT
+select a from test1 order by b' at line 1
+mysql> \. D:\fatjudger\basic\types\float.fwt
+Query OK, 1 row affected (0.13 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Database changed
+ERROR: 
+No query specified
+
+Query OK, 0 rows affected (0.22 sec)
+
+Query OK, 1 row affected (0.05 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+Query OK, 1 row affected (0.05 sec)
+
+Query OK, 1 row affected (0.05 sec)
+
+Query OK, 1 row affected (0.05 sec)
+
+Query OK, 1 row affected (0.08 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
++-------------------+-------------------+
+| sum(b)            | avg(b)            |
++-------------------+-------------------+
+| 569416.1005859375 | 63268.45562065972 |
++-------------------+-------------------+
+1 row in set (0.00 sec)
+
++------+
+| a    |
++------+
+|    1 |
+|    5 |
+|    7 |
+|    6 |
+|    8 |
+|    4 |
+|    3 |
+|    2 |
+|    9 |
++------+
+9 rows in set (0.00 sec)
+
+mysql> \. D:\fatjudger\basic\simple\create.fwt
+ERROR 1007 (HY000): Can't create database 'db'; database exists
+Database changed
+ERROR: 
+No query specified
+
+ERROR 1050 (42S01): Table 'a' already exists
+ERROR 1050 (42S01): Table 'b' already exists
+ERROR 1050 (42S01): Table 'c' already exists
+ERROR 1050 (42S01): Table 'd' already exists
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+Query OK, 1 row affected (0.05 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into b values ('a')' at line 3
+Query OK, 1 row affected (0.05 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+ERROR 1050 (42S01): Table 'empty' already exists
+mysql> \. D:\fatjudger\basic\simple\simple_case.fwt
+Query OK, 0 rows affected (0.22 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@UN_ORDERED_SELECT
+select * from aaaaa where aaaaa.a = 1' at line 1
+mysql> \. D:\fatjudger\basic\simple\create.fwt
+ERROR 1007 (HY000): Can't create database 'db'; database exists
+Database changed
+ERROR: 
+No query specified
+
+ERROR 1050 (42S01): Table 'a' already exists
+ERROR 1050 (42S01): Table 'b' already exists
+ERROR 1050 (42S01): Table 'c' already exists
+ERROR 1050 (42S01): Table 'd' already exists
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.18 sec)
+
+Query OK, 1 row affected (0.12 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into b values ('a')' at line 3
+Query OK, 1 row affected (0.12 sec)
+
+Query OK, 1 row affected (0.13 sec)
+
+Query OK, 1 row affected (0.74 sec)
+
+Query OK, 1 row affected (0.22 sec)
+
+Query OK, 1 row affected (0.13 sec)
+
+Query OK, 1 row affected (0.18 sec)
+
+ERROR 1050 (42S01): Table 'empty' already exists
+mysql> \. D:\fatjudger\basic\simple\create.fwt
+Query OK, 6 rows affected (0.56 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Database changed
+ERROR: 
+No query specified
+
+Query OK, 0 rows affected (0.36 sec)
+
+Query OK, 0 rows affected (0.18 sec)
+
+Query OK, 0 rows affected (0.19 sec)
+
+Query OK, 0 rows affected (0.17 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+Query OK, 1 row affected (0.05 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insert into b values ('a')' at line 3
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+Query OK, 0 rows affected (0.17 sec)
+
+mysql> \. D:\fatjudger\basic\simple\create.fwt
+Query OK, 5 rows affected (0.33 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Database changed
+ERROR: 
+No query specified
+
+Query OK, 0 rows affected (0.14 sec)
+
+Query OK, 0 rows affected (0.24 sec)
+
+Query OK, 0 rows affected (0.37 sec)
+
+Query OK, 0 rows affected (0.17 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.05 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.05 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.05 sec)
+
+Query OK, 1 row affected (0.05 sec)
+
+Query OK, 0 rows affected (0.32 sec)
+
+mysql> \. D:\fatjudger\basic\simple\simple_case.fwt
+Query OK, 0 rows affected (0.17 sec)
+
+Query OK, 1 row affected (0.05 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected (0.05 sec)
+
++------+
+| a    |
++------+
+|    1 |
++------+
+1 row in set (0.00 sec)
+

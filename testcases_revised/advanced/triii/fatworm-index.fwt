@@ -1,0 +1,34 @@
+
+use acm
+;
+
+create index idx0 on student(id)
+;
+
+drop index idx0 on student
+;
+
+create index idx1 on fatworm(groupid)
+;
+
+
+select name, groupid from fatworm where groupid = 'Z'
+;
+
+drop index idx1 on fatworm
+;
+
+create index ind on E(id)
+;
+
+
+select * from A, E where A.id = E.id
+;
+
+
+SELECT * FROM E as E1 WHERE id >= ALL(select ID from E where E1.id <= E.id)
+;
+
+drop index ind on E
+;
+

@@ -1,0 +1,13 @@
+use db
+;
+@UN_ORDERED_SELECT
+select *
+from a, b
+where a = 1 and b = 'a'
+;
+@UN_ORDERED_SELECT
+select *
+from a as b, a as c
+where b.a = 1 and c.a = 1
+;
+

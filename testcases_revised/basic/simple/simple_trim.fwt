@@ -1,0 +1,20 @@
+use db
+;
+
+create table ctest ( a char(3) )
+;
+
+insert into ctest values ('eee')
+;
+@UN_ORDERED_SELECT
+select * from ctest
+;
+
+create table vctest ( a varchar(3) )
+;
+
+insert into vctest values ('eee')
+;
+@UN_ORDERED_SELECT
+select * from vctest
+;

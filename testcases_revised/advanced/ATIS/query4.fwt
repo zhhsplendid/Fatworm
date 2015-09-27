@@ -1,0 +1,7 @@
+
+use ATIS
+;
+
+
+select monthname.monthname,dayname.dayname from monthname,dayname where monthname.monthnumber=dayname.daycode and dayname.daycode >= 4 order by monthname.monthname ASC
+;

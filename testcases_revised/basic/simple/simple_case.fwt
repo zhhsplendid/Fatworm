@@ -1,0 +1,17 @@
+@NEW_THREAD
+use db
+;
+create table AAAAA ( a int )
+;
+
+insert into aaaaa values ( 1 )
+;
+
+insert into aaaaa values ( 2 )
+;
+
+insert into aaaaa values ( 3 )
+;
+@UN_ORDERED_SELECT
+select * from aaaaa where aaaaa.a = 1
+;

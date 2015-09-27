@@ -1,0 +1,7 @@
+
+use ATIS
+;
+
+
+select distinct * from fare order by farecode ASC
+;

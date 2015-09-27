@@ -1,0 +1,27 @@
+use db
+;
+@UN_ORDERED_SELECT
+select * from d where a > b
+;
+@UN_ORDERED_SELECT
+select * from d where a < b
+;
+@UN_ORDERED_SELECT
+select * from d where a = b
+;
+@UN_ORDERED_SELECT
+select * from d where a <> b
+;
+@UN_ORDERED_SELECT
+select * from d where a <= b
+;
+@UN_ORDERED_SELECT
+select * from d where a >= b
+;
+@UN_ORDERED_SELECT
+select * from d where a > 0 or (a < 3 and b = 1)
+;
+@UN_ORDERED_SELECT
+select * from d where (a > 0 and a < 2) or (b > 0 and (b < 3 or b > 10))
+;
+

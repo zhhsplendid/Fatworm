@@ -1,0 +1,7 @@
+
+use ATIS
+;
+
+
+select flight.flightcode,aircraft.aircrafttype from flight,aircraft where flight.aircraftcode=aircraft.aircraftcode
+;

@@ -1,0 +1,17 @@
+use db
+;
+@UN_ORDERED_SELECT
+select avg(a) from a
+;
+@UN_ORDERED_SELECT
+select avg(a) from c group by b having avg(a) > 1
+;
+@UN_ORDERED_SELECT
+select min(a)+max(a) from a
+;
+@UN_ORDERED_SELECT
+select avg(a) from a
+;
+@UN_ORDERED_SELECT
+select count(a) from empty
+;

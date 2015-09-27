@@ -1,0 +1,39 @@
+
+use ATISN
+;
+
+
+select city.cityname,state.statename,city.citycode from city,state where city.citycode='MATL' and city.statecode=state.statecode order by city.cityname,state.statename,city.citycode
+;
+
+
+select city.cityname,state.statename,city.citycode from state,city where city.statecode=state.statecode order by city.cityname,state.statename,city.citycode
+;
+
+
+use ATISN
+;
+
+
+select monthname.monthname,dayname.dayname from monthname,dayname where monthname.monthnumber=dayname.daycode order by monthname.monthname,dayname.dayname
+;
+
+
+select monthname.monthname,dayname.dayname from monthname,dayname where monthname.monthnumber=dayname.daycode and dayname.daycode >= 4 order by monthname.monthname,dayname.dayname
+;
+
+
+select flight.flightcode,aircraft.aircrafttype from flight,aircraft where flight.aircraftcode=aircraft.aircraftcode order by flight.flightcode,aircraft.aircrafttype
+;
+
+
+use ATISN
+;
+
+
+select fare.farecode from restrictcarrier,airline,fare where restrictcarrier.airlinecode=airline.airlinecode and fare.restrictcode=restrictcarrier.restrictcode order by fare.farecode
+;
+
+
+select airline.airlinename,aircraft.aircrafttype from aircraft,airline,flight where flight.aircraftcode=aircraft.aircraftcode and flight.airlinecode=airline.airlinecode order by airline.airlinename,aircraft.aircrafttype
+;

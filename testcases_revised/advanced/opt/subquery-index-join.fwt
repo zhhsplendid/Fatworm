@@ -1,0 +1,13 @@
+
+use opt
+;
+
+
+select TTAA.id, TTAA.val
+from TTAA
+where TTAA.id in ( select id from TTBB )
+;
+
+
+
+

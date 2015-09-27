@@ -1,0 +1,57 @@
+
+use acm
+;
+
+create table auto(
+	id int auto_increment,
+	name varchar(20),
+	primary key(id))
+;
+insert into auto values (3, 'AAA')
+;
+
+
+select * from auto where id = 3
+;
+
+insert into auto values (null, 'BBB')
+;
+
+
+select * from auto
+;
+
+
+select * from auto where id = 4
+;
+
+insert into auto values (default, 'CCC')
+;
+
+
+select * from auto where id = 5
+;
+
+insert into auto values (default, 'DDD')
+;
+
+
+select * from auto where id = 6
+;
+
+insert into auto values (1, 'EEE')
+;
+
+
+select * from auto where id = 1
+;
+
+insert into auto values (null, 'FFF')
+;
+
+
+select * from auto where id = 7
+;
+
+drop table auto
+;

@@ -1,0 +1,7 @@
+
+use ATIS
+;
+
+
+select citycode, avg(groundfare) as avgfare from groundservice where groundfare<>0 group by citycode order by citycode ASC
+;
